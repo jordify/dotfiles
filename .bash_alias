@@ -1,0 +1,63 @@
+#!/bin/bash
+# sourced by .bashrc
+
+# SSH {{{
+alias compy266='ssh -X joe@jordify.dyndns.org'
+alias aniline='ssh -X joe@aniline.jordify.com'
+alias shih='ssh -X joe@shih'
+alias delta='ssh -X gomez@delta'
+alias kappa='ssh -X gomez@kappa-1'
+alias mu='ssh -X gomez@mu'
+# }}}
+
+# Directories {{{
+alias ls='ls -Gh'
+alias la='ls -la'
+alias ll='ls -l'
+alias lt='tree'
+# }}}
+
+# Cd {{{
+alias ..='cd ..'
+alias ...='cd ../..'
+# }}}
+
+# Minecraft {{{
+#alias minestart='sudo -u craftbukkit /srv/craftbukkit/craftbukkit.sh start'
+#alias mineconsole='sudo -u craftbukkit /srv/craftbukkit/craftbukkit.sh console'
+# }}}
+
+# Music {{{
+alias np='mpc --format "  %title% by %artist% #[%album%#]" | head -n1'
+
+alias add='mpc add'
+alias addall='mpc --no-status clear && mpc ls | mpc --no-status add && mpc --no-status play; np'
+
+alias P='mpc --no-status toggle; np'
+alias n='mpc --no-status next; np'
+alias p='mpc --no-status prev; np'
+alias s='mpc --no-status stop '
+# }}}
+
+# Misc. {{{
+alias Pacman='sudo pacman'
+#alias diff='colordiff'
+alias grep='grep --color=auto'
+alias mkdir='mkdir -p'
+#alias rdp='rdesktop -K -g 1280x1040'
+#alias ecel='open rdesktop -K -g 1280x1040 cluster.ecel.ufl.edu -u jgomez'
+alias sizeof='du -sh'
+alias updatefonts='sudo fc-cache -vf'
+#alias uzbl='uzbl_session.sh -n'
+#alias vboxup='sudo vbox_build_module'
+#alias wers='mplayer -playlist http://wers.org/wers.asx'
+# }}}
+
+# Screen {{{
+alias smain='SCREEN_CONF=main screen -S main -D -R main'
+#}}}
+
+#VBox {{{
+alias winUp='open VBoxHeadless -s Windoze'
+alias winDown='VBoxManage controlvm Windoze savestate'
+# }}}

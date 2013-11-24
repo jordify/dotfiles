@@ -1,0 +1,2 @@
+screen -t blue $SHELL
+screen -t watch watch -n 60 tail /var/log/minecraft.log
