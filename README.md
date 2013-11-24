@@ -1,3 +1,3 @@
 # My Dotfiles
 
-Test of managing my dotfiles using [rcm](https://github/mike-burns/rcm)
+Test of managing my dotfiles using [rcm](https://github.com/mike-burns/rcm)
