@@ -23,6 +23,10 @@ export EDITOR=vim
 export VISUAL=$EDITOR
 #export BROWSER=chromium
 
+# custom man pages
+export MANPATH="$MANPATH:$HOME/.dotfiles/man"
+export MANSECT="1:n:l:8:3:2:3posix:3pm:3perl:5:4:9:6:7:jg"
+
 # colored man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'             # begin blinking
 export LESS_TERMCAP_md=$'\E[01;38;5;74m'        # begin bold

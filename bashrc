@@ -7,6 +7,8 @@
 [ -f $HOME/.dotfiles/.bash_functions ] && source $HOME/.dotfiles/.bash_functions
 [ -f $HOME/.dotfiles/.bash_exports ] && source $HOME/.dotfiles/.bash_exports
 [ -f $HOME/.dotfiles/.bash_alias ] && source $HOME/.dotfiles/.bash_alias
+[ -f $HOME/.dotfiles/git-completion.bash ] && source $HOME/.dotfiles/git-completion.bash
+[ -f $HOME/.dotfiles/git-prompt.sh ] && source $HOME/.dotfiles/git-prompt.sh
 
 # advanced bash-completion
 [ -f /etc/bash_completion ] && source /etc/bash_completion
@@ -40,8 +42,8 @@ fi
 BW="\e[1;37m"
 W="\e[0m"
 
-# //host_name/exit_status/working_directory
-PS1="\[$BB\]//\[$BW\]\h\[$BB\]/\[$BW\]\$?\[$BB\]/\[$BW\]\w/ \[$W\]"
+# //host_name/exit_status/working_directory/git_status
+PS1="\$(__git_ps1)\[$BB\]//\[$BW\]\h\[$BB\]/\[$BW\]\$?\[$BB\]/\[$BW\]\w/ \[$W\]"
 PS2="\[$BB\]// \[$W\]"
 
 # fallback prompt
